@@ -1,0 +1,38 @@
+use practisedb;
+
+create table Employee(
+EMP_ID int,
+Name varchar (10),
+DEPT_ID varchar (10), 
+Region_ID varchar (10),
+Salary int);
+
+INSERT INTO Employee values ('1','John','A2','AA',500), ('2','Bruce','A2','AB',600), ('3','Ethan','124','AC',658), ('4','David','A7','AA',958),('5','Nathan','A5','AB',863),
+('6','Mary','101','AA',258), ('7','George','A3','AB',648), ('8','Helen','104','AA',256), ('9','Mariam','A6','AB',846),('10','Malcom','505','AC',1009),
+('11','Ajay','A7','AB',900), ('12','Tushar','A4','AC',845), ('13','Subha','A9','AA',963), ('14','Madhu','101','AB',458),('15','Raja','505','AC',456);
+
+Select * from Employee;
+
+create table Department_1(
+DEPT_ID varchar(10),
+DEPT_NAME varchar(10), 
+Budget int);
+
+INSERT INTO Department_1 values ('A1','PAG','1200'), ('A2','GTM','1500'),('A3','DFS','1600'),('A4','SLS','1800'),('A5','MKTG','1400'),('A6','CCO','1300'),('A7','COO','1800');
+
+
+create table Department_2(
+DEPT_ID_2 varchar(10),
+DEPT_NAME_2 varchar(10), 
+Budget_2 int);
+
+INSERT INTO Department_2 values ('101','FGH','1200'), ('104','SDF','1500'),('124','VCX','1600'),('104','WER','1800'),('505','CHI','1400');
+
+
+Select * from Department_1;
+
+
+Select * from Department_2;
+
+
+Select * from Department_1 union Select * from Department_2
